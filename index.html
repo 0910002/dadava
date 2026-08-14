@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>دادآوا | خبر، تحلیل و دیدگاه</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 2;
+        }
+
+        /* هدر */
+        header {
+            background: white;
+            text-align: center;
+            padding: 35px 20px 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            color: #111;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* منوی اصلی */
+        nav {
+            background: #151923;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 22px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #b51f2a;
+        }
+
+        /* محتوای سایت */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        /* خبر اصلی */
+        .main-news {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 45px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .main-news img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .main-news-content {
+            padding: 25px 30px 30px;
+        }
+
+        .main-news h2 {
+            font-size: 30px;
+            margin: 0 0 10px;
+        }
+
+        .main-news p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #151923;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .read-more:hover {
+            background: #b51f2a;
+        }
+
+        /* عنوان بخش */
+        .section-title {
+            border-right: 5px solid #b51f2a;
+            padding-right: 12px;
+            margin: 40px 0 20px;
+            font-size: 27px;
+        }
+
+        /* کارت خبرها */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .news-card {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+        }
+
+        .news-card h3 {
+            margin-top: 0;
+            font-size: 19px;
+        }
+
+        .news-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .news-card a {
+            color: #b51f2a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* بخش‌های ساده */
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+        }
+
+        .category h3 {
+            margin-top: 0;
+        }
+
+        .category p {
+            color: #666;
+        }
+
+        /* فوتر */
+        footer {
+            margin-top: 60px;
+            background: #151923;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer p {
+            color: #bbb;
+            margin: 5px;
+        }
+
+        /* موبایل */
+        @media (max-width: 800px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+
+            .main-news img {
+                height: 280px;
+            }
+
+            .main-news h2 {
+                font-size: 24px;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- هدر -->
+    <header>
+
+        <h1>دادآوا</h1>
+
+        <p>
+            رسانه‌ای برای خبر، تحلیل و دیدگاه
+        </p>
+
+    </header>
+
+
+    <!-- منو -->
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#home">خانه</a>
+            </li>
+
+            <li>
+                <a href="#iran">ایران</a>
+            </li>
+
+            <li>
+                <a href="#world">جهان</a>
+            </li>
+
+            <li>
+                <a href="#politics">سیاست</a>
+            </li>
+
+            <li>
+                <a href="#economy">اقتصاد</a>
+            </li>
+
+            <li>
+                <a href="#analysis">تحلیل</a>
+            </li>
+
+            <li>
+                <a href="#notes">یادداشت</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <!-- خبر اصلی -->
+
+        <section id="home">
+
+            <h2 class="section-title">
+                مهم‌ترین خبر امروز
+            </h2>
+
+            <article class="main-news">
+
+                <img src="news.jpg" alt="خبر اصلی دادآوا">
+
+                <div class="main-news-content">
+
+                    <h2>
+                        دادآوا؛ روایت تازه‌ای از خبر و تحلیل
+                    </h2>
+
+                    <p>
+                        در دادآوا تلاش می‌کنیم مهم‌ترین رویدادهای
+                        ایران و جهان را با نگاه خبری و تحلیلی دنبال کنیم.
+                    </p>
+
+                    <a class="read-more" href="news1.html">
+                        ادامه خبر
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ایران -->
+
+        <section id="iran">
+
+            <h2 class="section-title">
+                ایران
+            </h2>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <h3>
+                        آخرین اخبار ایران
+                    </h3>
+
+                    <p>
+                        مهم‌ترین رویدادها و اخبار ایران را دنبال کنید.
+                    </p>
+
+                    <a href="news1.html">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        جامعه ایران
+                    </h3>
+
+                    <p>
+                        گزارش‌ها و تحولات اجتماعی ایران.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        مسائل روز ایران
+                    </h3>
+
+                    <p>
+                        بررسی موضوعات مهم و مورد توجه جامعه.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- سیاست -->
+
+        <section id="politics">
+
+            <h2 class="section-title">
+                سیاست
+            </h2>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <h3>
+                        آخرین اخبار سیاسی
+                    </h3>
+                   <p>
+                        اخبار و تحولات سیاسی ایران و جهان.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        سیاست خارجی
+                    </h3>
+
+                    <p>
+                        روابط بین‌الملل و تحولات دیپلماتیک.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        تحلیل سیاسی
+                    </h3>
+
+                    <p>
+                        بررسی تحولات سیاسی با نگاهی تحلیلی.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- اقتصاد -->
+
+        <section id="economy">
+
+            <h2 class="section-title">
+                اقتصاد
+            </h2>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <h3>
+                        اخبار اقتصادی
+                    </h3>
+
+                    <p>
+                        مهم‌ترین اخبار بازار و اقتصاد ایران.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        اقتصاد ایران
+                    </h3>
+
+                    <p>
+                        بررسی مسائل و تحولات اقتصادی کشور.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <h3>
+                        اقتصاد جهان
+                    </h3>
+
+                    <p>
+                        تازه‌ترین تحولات اقتصاد جهانی.
+                    </p>
+
+                    <a href="#">
+                        ادامه مطلب ←
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- جهان -->
+
+        <section id="world">
+
+            <h2 class="section-title">
+                جهان
+            </h2>
+
+            <div class="category">
+
+                <h3>
+                    اخبار جهان
+                </h3>
+
+                <p>
+                    آخرین رویدادها و تحولات جهان.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- تحلیل -->
+
+        <section id="analysis">
+
+            <h2 class="section-title">
+                تحلیل
+            </h2>
+
+            <div class="category">
+
+                <h3>
+                    تحلیل‌های دادآوا
+                </h3>
+
+                <p>
+                    تحلیل‌های سیاسی، اقتصادی و اجتماعی با نگاه مستقل.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- یادداشت -->
+
+        <section id="notes">
+
+            <h2 class="section-title">
+                یادداشت
+            </h2>
+
+            <div class="category">
+
+                <h3>
+                    یادداشت‌های دادآوا
+                </h3>
+
+                <p>
+                    دیدگاه‌ها و یادداشت‌های نویسندگان دادآوا.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- پایین سایت -->
+
+    <footer>
+
+        <h3>
+            دادآوا
+        </h3>
+
+        <p>
+            رسانه‌ای برای خبر، تحلیل و دیدگاه
+        </p>
+
+        <p>
+            © 2026 دادآوا
+        </p>
+
+    </footer>
+
+</body>
+
+</html> 
