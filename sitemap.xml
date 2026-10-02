@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://0910002.github.io/dadava/</loc>
-  </url>
+<url>
+<loc>https://0910002.github.io/dadava/</loc>
+</url>
 
-  <url>
-    <loc>https://0910002.github.io/dadava/news1.html</loc>
-  </url>
+<url>
+<loc>https://0910002.github.io/dadava/news1.html</loc>
+</url>
+
 <url>
 <loc>https://0910002.github.io/dadava/analysis1.html</loc>
 </url>
+
+<url>
+<loc>https://0910002.github.io/dadava/iran1.html</loc>
+</url>
+
+<url>
+<loc>https://0910002.github.io/dadava/world1.html</loc>
+</url>
+
+<url>
+<loc>https://0910002.github.io/dadava/politics1.html</loc>
+</url>
+
+<url>
+<loc>https://0910002.github.io/dadava/economy1.html</loc>
+</url>
+
+<url>
+<loc>https://0910002.github.io/dadava/technology1.html</loc>
+</url>
+
 </urlset>
