@@ -585,6 +585,284 @@
      <div>
     <a href="analysis1.html">مطالعه مقاله</a>
 </div>
+     alt="شهر و تحولات بین‌المللی"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">جنگ و امنیت</span>
+        <h3>جنگ اوکراین و نگرانی درباره زیرساخت‌های انرژی</h3>
+        <p>
+          آسیب به زیرساخت‌های انرژی می‌تواند زندگی روزمره مردم،
+          فعالیت اقتصادی و تأمین برق و گرمایش را با دشواری
+          روبه‌رو کند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.reuters.com/world/europe/"
+             target="_blank" rel="noopener">رویترز؛ اروپا</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر پنجم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+        alt="نمودارها و بازارهای مالی"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">بازارهای مالی</span>
+        <h3>نگاه بازارهای جهانی به تورم و نرخ بهره</h3>
+        <p>
+          آمار تورم و تصمیم‌های بانک‌های مرکزی می‌توانند
+          بر ارزش ارزها، بازار سهام، اوراق قرضه و جریان
+          سرمایه در اقتصاد جهانی اثر بگذارند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.reuters.com/markets/"
+             target="_blank" rel="noopener">رویترز؛ بازارها</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر ششم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80"
+        alt="فناوری و شبکه‌های جهانی"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">فناوری</span>
+        <h3>هوش مصنوعی و آینده اقتصاد جهانی</h3>
+        <p>
+          گسترش هوش مصنوعی فرصت‌هایی برای افزایش بهره‌وری
+          ایجاد می‌کند، اما تغییر بازار کار، تمرکز سرمایه
+          و نابرابری نیز از موضوعات مورد بحث هستند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.weforum.org/"
+             target="_blank" rel="noopener">مجمع جهانی اقتصاد</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر هفتم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80"
+        alt="روزنامه و اخبار"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">جامعه</span>
+        <h3>نابرابری اقتصادی و چالش‌های توسعه پایدار</h3>
+        <p>
+          دسترسی به آموزش، خدمات درمانی، فرصت‌های شغلی
+          و حمایت اجتماعی از عوامل مهم در بررسی نابرابری
+          و کیفیت زندگی جوامع هستند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.worldbank.org/"
+             target="_blank" rel="noopener">بانک جهانی</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر هشتم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=80"
+        alt="پول و اقتصاد"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">اقتصاد ایران</span>
+        <h3>تورم و قدرت خرید خانوارها؛ چه عواملی تعیین‌کننده‌اند؟</h3>
+        <p>
+          نرخ ارز، هزینه تولید، سیاست‌های پولی و مالی
+          و وضعیت عرضه و تقاضا از عواملی هستند که می‌توانند
+          بر قیمت کالاها و قدرت خرید مردم اثر بگذارند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.cbi.ir/"
+             target="_blank" rel="noopener">بانک مرکزی ایران</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+     <style>
+/* طراحی بخش اخبار دادآوا */
+.news-section {
+  direction: rtl;
+  text-align: right;
+  font-family: Tahoma, Arial, sans-serif;
+  padding: 20px 12px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.news-section h2 {
+  border-right: 5px solid #173b68;
+  padding-right: 12px;
+  color: #173b68;
+  margin-bottom: 20px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-category {
+  color: #b13b32;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  line-height: 1.9;
+  margin: 8px 0;
+  color: #222;
+}
+
+.news-card p {
+  font-size: 14px;
+  line-height: 2;
+  color: #555;
+}
+
+.news-card a {
+  color: #173b68;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-card a:hover {
+  color: #b13b32;
+}
+
+.news-source {
+  font-size: 12px;
+  color: #777;
+  margin-top: 12px;
+}
+
+@media (max-width: 850px) {
+  .news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card img {
+    height: 220px;
+  }
+}
+</style>
+
+<section class="news-section">
+  <h2>آخرین اخبار ایران و جهان</h2>
+
+  <div class="news-grid">
+
+    <!-- خبر اول -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+        alt="ارتباطات و تحولات سیاسی"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">سیاست خارجی</span>
+        <h3>تحولات تازه در روابط ایران و آمریکا</h3>
+        <p>
+          تحولات دیپلماتیک منطقه و گفت‌وگوهای مربوط به ایران و آمریکا
+          از موضوعات مهم سیاست خارجی هستند. جزئیات باید با آخرین
+          گزارش‌های معتبر تطبیق داده شود.
+        </p>
+        <div class="news-source">
+          منبع برای بررسی:
+          <a href="https://www.reuters.com/world/middle-east/"
+             target="_blank" rel="noopener">رویترز</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر دوم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80"
+        alt="انرژی و منابع طبیعی"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">اقتصاد و انرژی</span>
+        <h3>نوسانات قیمت نفت و پیامدهای آن برای اقتصاد جهان</h3>
+        <p>
+          تغییرات قیمت نفت می‌تواند بر هزینه حمل‌ونقل، تورم،
+          درآمد کشورهای صادرکننده و قیمت انرژی در بازارهای جهانی
+          تأثیر بگذارد.
+        </p>
+        <div class="news-source">
+          منبع برای بررسی:
+          <a href="https://www.reuters.com/business/energy/"
+             target="_blank" rel="noopener">رویترز؛ انرژی</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر سوم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+        alt="ساختمان دولتی و سیاست"
+        loading="lazy">
+      <div class="news-content">
+        <span class="news-category">سیاست ایران</span>
+        <h3>معیشت مردم و چالش‌های سیاست‌گذاری اقتصادی</h3>
+        <p>
+          تورم، قدرت خرید خانوارها، اشتغال و تأمین کالاهای اساسی
+          از موضوعاتی هستند که در ارزیابی سیاست‌های اقتصادی
+          باید مورد توجه قرار گیرند.
+        </p>
+        <div class="news-source">
+          منبع برای پیگیری:
+          <a href="https://www.irna.ir/"
+             target="_blank" rel="noopener">خبرگزاری ایرنا</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- خبر چهارم -->
+    <article class="news-card">
+      <img
+        src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80"
     </main>
 
 
