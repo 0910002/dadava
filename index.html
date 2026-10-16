@@ -161,28 +161,122 @@ footer a{color:white}
   .nav-links a{padding:14px}
 }
 @media(max-width:600px){
-  .header-main{min-height:0;align-items:center;gap:12px}
-  .logo{width:76px;height:76px}
-  .brand-text h1{font-size:22px}
-  .brand-text p{font-size:11px}
-  .slog
- an{font-size:14px}
-  .header-left{gap:10px}
-  .search input{width:155px;padding:10px;font-size:12px}
-  .search button{padding:0 10px}
-  .nav-links{justify-content:center}
-  .nav-links a{font-size:12px;padding:12px 10px}
-  .hero{min-height:330px}
-  .hero::after{
-    background:linear-gradient(0deg,rgba(5,19,34,.96),
-    rgba(5,19,34,.64) 60%,rgba(5,19,34,.1))
+
+  .container{
+    width:94%;
   }
-  .hero-content{width:100%;padding:22px}
-  .hero h2{font-size:23px}
-  .hero p{font-size:13px}
-  .news-grid{grid-template-columns:1fr;gap:14px}
-  .news-card img{height:210px}
-  .section-title{font-size:18px}
+
+  .header-main{
+    min-height:0;
+    padding:12px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+  }
+
+  .brand{
+    width:100%;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .logo{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+  }
+
+  .brand-text h1{
+    font-size:23px;
+    margin-bottom:5px;
+  }
+
+  .brand-text p{
+    font-size:12px;
+  }
+
+  .header-left{
+    width:100%;
+    gap:10px;
+    align-items:center;
+  }
+
+  .slogan{
+    font-size:15px;
+    text-align:center;
+  }
+
+  .search{
+    width:100%;
+    gap:8px;
+  }
+
+  .search input{
+    width:100%;
+    max-width:none;
+    min-width:0;
+    padding:12px;
+    font-size:13px;
+  }
+
+  .search button{
+    flex-shrink:0;
+    padding:0 12px;
+    font-size:12px;
+  }
+
+  .nav-links{
+    justify-content:center;
+    gap:0;
+  }
+
+  .nav-links a{
+    padding:12px 10px;
+    font-size:12px;
+  }
+
+  .hero{
+    min-height:340px;
+    margin:12px auto 22px;
+  }
+
+  .hero-content{
+    width:100%;
+    padding:22px;
+  }
+
+  .hero h2{
+    font-size:23px;
+    line-height:1.8;
+  }
+
+  .hero p{
+    font-size:13px;
+    line-height:2;
+  }
+
+  .news-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .news-card img{
+    display:block;
+    width:100%;
+    height:210px;
+    object-fit:cover;
+  }
+
+  .news-card h3{
+    font-size:17px;
+  }
+
+  .news-card p{
+    font-size:13px;
+  }
+
+}
 }
 </style>
 </head>
