@@ -425,7 +425,33 @@ alt="تخت جمشید، یادگار تمدن هخامنشی">
          href="https://www.reuters.com/world/middle-east/qatari-mediators-return-tehran-push-us-iran-deal-official-says-2026-10-30/"
          target="_blank" rel="noopener">منبع: رویترز ←</a>
     </article>
+<section class="news-slider" dir="rtl">
+  <div class="slider-header">
+    <h2>منتخب اخبار دادآوا</h2>
+    <span>تازه‌ترین رویدادها</span>
+  </div>
 
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+
+    <div class="slider-content">
+      <img id="slide-image" src="news.jpg" alt="تصویر خبر">
+
+      <div class="slider-overlay">
+        <span id="slide-category">اخبار</span>
+        <h3 id="slide-title">عنوان خبر در این قسمت نمایش داده می‌شود</h3>
+        <p id="slide-description">
+          خلاصه خبر در این قسمت قرار می‌گیرد.
+        </p>
+        <a id="slide-link" href="iran1.html">مطالعه کامل خبر ←</a>
+      </div>
+    </div>
+
+    <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <div class="slider-dots" id="slider-dots"></div>
+</section>
     <!-- جهان -->
     <article class="dadava-news-card">
       <span class="category">جهان</span>
